@@ -1,0 +1,59 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            <span text-end>  
+                <ion-icon name="md-share"></ion-icon>
+                <ion-icon class="material-icons">bookmark_border</ion-icon>
+            </span>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-light">
+    <ion-list no-lines class="details">
+        <ion-item>
+            <h2>Senior UI/UX designer as well as graphic designer</h2>
+            <p><img src="assets/imgs/ic_jobprofile.png">
+                <span class="text-ellipsis">Designer</span>
+                <span class="text-ellipsis experience ">4-5 {{"yr_exp" | translate}}</span>
+                <span class="text-ellipsis end ">$19.00 / Hr</span>
+            </p>
+            <ion-row class="bottom" (click)="companyinfo()">
+                <ion-col col-10>
+                    <div class="d-flex">
+                        <div class="img-box">
+                            <!--                        <img src="assets/imgs/ic_skill.png">-->
+                        </div>
+                        <h5 class="text-ellipsis">Horion Web Solutions <span class="text-ellipsis">Hemiltion Bridege, New York</span></h5>
+                    </div>
+                </ion-col>
+                <ion-col col-2 text-end>
+                    <ion-icon name="ios-arrow-forward-outline"></ion-icon>
+                </ion-col>
+            </ion-row>
+        </ion-item>
+    </ion-list>
+    <div class="about">
+        <h2>{{"about_job" | translate}}</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type .</p>
+        <div class="responsibilites">
+            <h2>{{"responsibilites" | translate}}</h2>
+            <p class="text-ellipsis">Lorem Ipsum is simply</p>
+            <p class="text-ellipsis">It is a long established fact . </p>
+            <p class="text-ellipsis">There are many variations of passages.</p>
+            <p class="text-ellipsis">The standard chunk of Lorem Ipsum.</p>
+            <p class="text-ellipsis">If you are going to use a passage.</p>
+            <p class="text-ellipsis">All the Lorem Ipsum generators on.</p>
+        </div>
+    </div>
+    <div class="fixed-bottom">
+        <ion-row>
+            <ion-col col-5>
+                <button ion-button block class="btn message" icon-start>  <ion-icon name="ios-chatboxes-outline"></ion-icon>{{"message" | translate}}</button>
+            </ion-col>
+            <ion-col col-7>
+                <button ion-button block class="btn" (click)="sendresume()">{{"apply" | translate}}</button>
+            </ion-col>
+        </ion-row>
+    </div>
+</ion-content>

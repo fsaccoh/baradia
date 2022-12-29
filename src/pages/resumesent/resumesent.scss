@@ -1,0 +1,33 @@
+page-resumesent {
+    .img-box {
+        width: 300px;
+        margin: 0 auto;
+        display: block;
+        margin-top: 121px;
+    }
+    h2 {
+        font-size: 1.9rem;
+        font-weight: 500;
+        margin-top: 57px;
+    }
+    p {
+        font-size: 1.55rem;
+        width: 225px;
+        margin: 0 auto;
+        margin-top: 24px;
+        color: $gray;
+    }
+    .fixed-bottom {
+        position: unset;
+        margin-top: 82px;
+        .button {
+            &.btn {
+                color: $text-theme-color !important;
+                background: none;
+                text-transform: none;
+                font-size: 1.9rem;
+                letter-spacing: 0;
+            }
+        }
+    }
+}

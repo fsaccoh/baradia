@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>{{'account' | translate}}</ion-title>
+    </ion-navbar>
+    <div class="profile">
+        <div class="profile-img">
+            <!--           <img src="assets/imgs/img.png">-->
+        </div>
+        <h2>Sam Smith <span>Senior UI/UX Designer</span></h2>
+    </div>
+</ion-header>
+
+<ion-content class="bg-light">
+    <div class="menu">
+        <h3>{{'saved_resumes' | translate}}</h3>
+        <h3 (click)="notification()">{{'notification' | translate}} <span text-center>2</span></h3>
+        <h3>{{'invite_friends' | translate}}</h3>
+        <h3>{{'rate_us' | translate}}</h3>
+        <h3 (click)="manageLanguage()">{{'change_language' | translate}}</h3>
+        <h3 (click)="conditions()">{{'terms_condition' | translate}}</h3>
+        <h3 (click)="signin()">{{'logout' | translate}}</h3>
+    </div>
+</ion-content>
+<ion-footer *ngIf="config.demoMode" no-border>
+    <div class="developed_by d-flex" (click)="developed_by()">
+        <h2>{{"developed_by" | translate}}</h2>
+        <div class="img_box ion-text-end d-flex">
+            <img src="assets/imgs/opus.png" class="light-theme-logo end">
+        </div>
+    </div>
+</ion-footer>
+<div *ngIf="config.demoMode" class="buy-this-app-class">
+    <button ion-button class="button-size" style="background-color: #f8563a !important;" (click)="buyThisApp()" round>
+        <ion-icon name="md-cart" class="text-white"></ion-icon> &nbsp;
+        {{'buy_this_app' | translate}}
+    </button>
+</div>

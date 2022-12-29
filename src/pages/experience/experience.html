@@ -1,0 +1,57 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>{{'updateresume' | translate}}</ion-title>
+    </ion-navbar>
+
+    <ion-row text-center>
+        <ion-col col-4 class="active">
+            <h2>{{'basic_info' | translate}}</h2>
+        </ion-col>
+        <ion-col col-4 class="">
+            <h2>{{'experience' | translate}}</h2>
+        </ion-col>
+        <ion-col col-4 class="">
+            <h2>{{'skills' | translate}}</h2>
+        </ion-col>
+    </ion-row>
+</ion-header>
+
+<ion-content class="bg-light">
+    <div class="form">
+        <ion-list no-lines margin-top>
+            <ion-item>
+                <ion-label floating>Job Title</ion-label>
+                <ion-input type="text" value="Senior UI Ux Designer"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>Company</ion-label>
+                <ion-input type="text" value="Opus Labs"></ion-input>
+            </ion-item>
+
+            <ion-row>
+                <ion-col col-6>
+                    <ion-item>
+                        <ion-label floating>from</ion-label>
+                        <ion-input type="text" value="Jan 2014"></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-6>
+                    <ion-item>
+                        <ion-label floating>To</ion-label>
+                        <ion-input type="text" value="Present"></ion-input>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+        </ion-list>
+    </div>
+
+    <div class="option">
+        <h2>Add more Experience <span>+</span></h2>
+        <h2>Add Univercity <span>+</span></h2>
+        <h2>Add Course<span>+</span></h2>
+    </div>
+
+    <div class="fixed-bottom">
+        <button ion-button block class="btn" (click)="skills()">Next</button>
+    </div>
+</ion-content>

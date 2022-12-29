@@ -1,0 +1,40 @@
+page-notification {
+    .list {
+        margin-top: 20px;
+        .item {
+            margin-top: 2px;
+            padding: 18px 23px 20px 23px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            .label {
+                white-space: normal;
+                margin: 0;
+                h2 {
+                    font-size: 1.7rem;
+                    font-weight: 500;
+                    display: flex;
+                    align-items: center;
+                    span {
+                        &.end {
+                            font-size: 1.2rem;
+                            font-weight: 400;
+                            margin-left: auto;
+                            color: $text-light;
+                            width: 36px;
+                        }
+                    }
+                }
+                p {
+                    margin: 0;
+                    font-size: 1.38rem;
+                    padding-top: 8px;
+                    color: lighten($gray, 6%);
+                    font-weight: 400;
+                }
+            }
+            .item-inner {
+                padding: 0;
+            }
+        }
+    }
+}

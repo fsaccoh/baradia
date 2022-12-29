@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{"update_resume1" | translate}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="bg-light">
+  <ion-list radio-group no-lines>
+    <h2>{{"current_cv" | translate}}</h2>
+    <ion-item>
+      <img item-start src="assets/imgs/ic_resume.png">
+      <ion-label>
+        <h5>
+          <span class="name">Sam Smith</span>
+          <span class="resumes-type">UI UX Designer. pdf</span>
+        </h5>
+        <p>{{"uploaded_on" | translate}} 26 June 2018</p>
+      </ion-label>
+      <ion-icon name="more" item-end></ion-icon>
+    </ion-item>
+    <ion-item (click)="basicinfo()">
+      <img item-start src="assets/imgs/ic_resume.png">
+      <ion-label>
+        <h5>
+          <span class="name">Sam Smith</span>
+          <span class="resumes-type">UI UX Designer. pdf</span>
+        </h5>
+        <p>{{"uploaded_on" | translate}} 26 June 2018</p>
+      </ion-label>
+      <ion-icon name="more" item-end></ion-icon>
+    </ion-item>
+    <div class="add-new-resumes">
+      <h2>Add new Resumes</h2>
+      <ion-item class="attach_file">
+        <img item-start src="assets/imgs/ic_attach_file.png">
+        <ion-label>
+          <h5>{{"attach_phone_cv" | translate}} </h5>
+          <p>.pdf, .doc, .tex, .cdr, ,rtf accepted</p>
+        </ion-label>
+      </ion-item>
+      <ion-item class="create" (click)="basicinfo()">
+        <img item-start src="assets/imgs/ic_create_new.png">
+        <ion-label>
+          <h5>
+            <span class="">{{"create_resume_jobber" | translate}}</span>
+          </h5>
+          <p>{{"create_resume_jobber_text" | translate}}</p>
+        </ion-label>
+      </ion-item>
+    </div>
+  </ion-list>
+</ion-content>

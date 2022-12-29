@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{"select_resume" | translate}}</ion-title>
+  </ion-navbar>
+  <ion-row>
+    <ion-col col-6>
+      <p><small>{{"apply_for" | translate}}</small></p>
+      <h2>UI/UX Designer</h2>
+    </ion-col>
+    <ion-col col-6 text-end>
+      <h3>Horion Web Solutions</h3>
+      <p><small>Hemlton Bridge, New York</small></p>
+    </ion-col>
+  </ion-row>
+</ion-header>
+
+<ion-content padding class="bg-light">
+  <ion-list radio-group no-lines>
+    <h2>{{"current_cv" | translate}}</h2>
+    <ion-item>
+      <ion-radio checked="true" item-start value="resumes1"></ion-radio>
+      <ion-label>
+        <h5>
+          <span class="name">Sam Smith</span>
+          <span class="resumes-type">UI UX Designer. pdf</span>
+        </h5>
+        <p>{{"uploaded_on" | translate}} 26 June 2018</p>
+      </ion-label>
+      <ion-icon name="more" item-end></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-radio item-start value="resumes2"></ion-radio>
+      <ion-label>
+        <h5>
+          <span class="name">Sam Smith</span>
+          <span class="resumes-type">UI UX Designer. pdf</span>
+        </h5>
+        <p>{{"uploaded_on" | translate}} 26 June 2018</p>
+      </ion-label>
+      <ion-icon name="more" item-end></ion-icon>
+    </ion-item>
+    <div class="add-new-resumes">
+      <h2>Add new Resumes</h2>
+      <ion-item class="attach_file">
+        <img item-start src="assets/imgs/ic_attach_file.png">
+        <ion-label>
+          <h5>
+            <span class="">{{"attach_phone_cv" | translate}}</span>
+          </h5>
+          <p>.pdf, .doc, .tex, .cdr, ,rtf accepted</p>
+        </ion-label>
+      </ion-item>
+      <ion-item class="create">
+        <img item-start src="assets/imgs/ic_create_new.png">
+        <ion-label>
+          <h5>
+            <span class="">{{"create_resume_jobber" | translate}}</span>
+          </h5>
+          <p>{{"create_resume_jobber_text" | translate}}</p>
+        </ion-label>
+      </ion-item>
+    </div>
+    <button ion-button block class="btn" (click)="resumesent()">{{"send" | translate}}</button>
+  </ion-list>
+</ion-content>

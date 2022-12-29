@@ -1,0 +1,83 @@
+page-home {
+    .header .toolbar .title .toolbar-title {
+        font-size: 2.2rem;
+        font-weight: 400;
+    }
+    .form {
+        background: $white;
+        padding: 5px 30px 13px 30px;
+        h2 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 23px;
+            padding-bottom: 19px;
+        }
+        .item {
+            border-color: lighten($gray, 20%) !important;
+            margin-top: 16px;
+            .item-inner ion-input .text-input {
+                margin-left: 0;
+            }
+            &.item-select {
+                .select {
+                    padding: 0;
+                    max-width: 100%;
+                    align-items: center;
+                    width: 100%;
+                    font-size: 1.7rem;
+                    font-weight: 500;
+                    letter-spacing: 0;
+                    .select-text {
+                        font-weight: 400;
+                        color: darken($gray, 1%);
+                    }
+                    .select-icon {
+                        width: 18px;
+                        height: 12px;
+                    }
+                }
+            }
+        }
+        .button {
+            &.btn {
+                border-radius: 10px;
+                margin-top: 35px;
+            }
+        }
+    }
+    .row {
+        padding: 27px 30px;
+        &.update_resume {
+            .img-box {
+                background: $theme-color;
+                width: 55px;
+                height: 55px;
+                border-radius: 10px;
+                position: relative;
+                img {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    width: 34px;
+                    margin: auto;
+                }
+            }
+            h2 {
+                font-size: 1.9rem;
+                font-weight: 500;
+                margin: 0;
+                padding-bottom: 10px;
+            }
+            p {
+                margin: 0;
+                font-size: 1.37rem;
+                font-weight: 500;
+                color: darken($text-light, 20%);
+                line-height: 17px;
+            }
+        }
+    }
+}

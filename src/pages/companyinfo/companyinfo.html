@@ -1,0 +1,121 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title></ion-title>
+    </ion-navbar>
+    <div class="banner">
+        <div class="map">
+            <img src="assets/imgs/map.png">
+        </div>
+        <div class="details" text-center>
+            <div class="img-box">
+                <!--                <img src="assets/imgs/co1.png">-->
+            </div>
+            <h2>Horion Web Solution</h2>
+            <p>Web & App Development Co.</p>
+        </div>
+        <ion-segment [(ngModel)]="tab">
+            <ion-segment-button value="about">
+                {{'about_co' | translate}}
+            </ion-segment-button>
+            <ion-segment-button value="openings">
+                {{'job_openings' | translate}}
+            </ion-segment-button>
+        </ion-segment>
+    </div>
+</ion-header>
+
+<ion-content class="bg-light">
+    <div [ngSwitch]="tab" div class="tab">
+        <div *ngSwitchCase="'about'" class="about">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+            <div class="responsibilites">
+                <h2>Company Services</h2>
+                <p class="text-ellipsis">Lorem Ipsum is simply</p>
+                <p class="text-ellipsis">It is a long established fact . </p>
+                <p class="text-ellipsis">There are many variations of passages.</p>
+                <p class="text-ellipsis">The standard chunk of Lorem Ipsum.</p>
+                <p class="text-ellipsis">If you are going to use a passage.</p>
+                <p class="text-ellipsis">All the Lorem Ipsum generators on.</p>
+            </div>
+        </div>
+        <div *ngSwitchCase="'openings'" class="openings">
+            <ion-list no-lines>
+                <ion-item>
+                    <h2>Senior UI/UX designer as well as knowledge of graphic designer</h2>
+                    <p><img src="assets/imgs/ic_jobprofile.png">
+                        <span class="text-ellipsis">Designer</span>
+                        <span class="text-ellipsis experience ">4-5 Years Exp.</span>
+                        <span class="text-ellipsis end ">$19.00 / Hr</span>
+                    </p>
+                    <p><img src="assets/imgs/ic_skill.png">
+                        <span class="text-ellipsis">Phtoshop,lllustrator,Principal, Material Guidelines, iOs Guidelines</span>
+                    </p>
+                    <ion-row class="bottom">
+                        <ion-col col-8>
+                            <div class="d-flex">
+                                <div class="img-box">
+                                    <!--                                    <img src="assets/imgs/co1.png">-->
+                                </div>
+                                <h5>Horion Web Solutions <span>Hemiltion Bridege, New York</span></h5>
+                            </div>
+                        </ion-col>
+                        <ion-col col-4 text-end>
+                            <ion-icon name="md-share"></ion-icon>
+                            <ion-icon class="material-icons">bookmark_border</ion-icon>
+                        </ion-col>
+                    </ion-row>
+                </ion-item>
+                <ion-item>
+                    <h2>Senior UI/UX designer as well as knowledge of graphic designer</h2>
+                    <p><img src="assets/imgs/ic_jobprofile.png">
+                        <span class="text-ellipsis">Designer</span>
+                        <span class="text-ellipsis experience ">4-5 Years Exp.</span>
+                        <span class="text-ellipsis end ">$19.00 / Hr</span>
+                    </p>
+                    <p><img src="assets/imgs/ic_skill.png">
+                        <span class="text-ellipsis">Phtoshop,lllustrator,Principal, Material Guidelines, iOs Guidelines</span>
+                    </p>
+                    <ion-row class="bottom">
+                        <ion-col col-8>
+                            <div class="d-flex">
+                                <div class="img-box">
+                                    <!--                                    <img src="assets/imgs/co1.png">-->
+                                </div>
+                                <h5>Horion Web Solutions <span>Hemiltion Bridege, New York</span></h5>
+                            </div>
+                        </ion-col>
+                        <ion-col col-4 text-end>
+                            <ion-icon name="md-share"></ion-icon>
+                            <ion-icon class="material-icons">bookmark_border</ion-icon>
+                        </ion-col>
+                    </ion-row>
+                </ion-item>
+                <ion-item>
+                    <h2>Senior UI/UX designer as well as knowledge of graphic designer</h2>
+                    <p><img src="assets/imgs/ic_jobprofile.png">
+                        <span class="text-ellipsis">Designer</span>
+                        <span class="text-ellipsis experience ">4-5 Years Exp.</span>
+                        <span class="text-ellipsis end ">$19.00 / Hr</span>
+                    </p>
+                    <p><img src="assets/imgs/ic_skill.png">
+                        <span class="text-ellipsis">Phtoshop,lllustrator,Principal, Material Guidelines, iOs Guidelines</span>
+                    </p>
+                    <ion-row class="bottom">
+                        <ion-col col-8>
+                            <div class="d-flex">
+                                <div class="img-box">
+                                    <!--                                    <img src="assets/imgs/co1.png">-->
+                                </div>
+                                <h5>Horion Web Solutions <span>Hemiltion Bridege, New York</span></h5>
+                            </div>
+                        </ion-col>
+                        <ion-col col-4 text-end>
+                            <ion-icon name="md-share"></ion-icon>
+                            <ion-icon class="material-icons">bookmark_border</ion-icon>
+                        </ion-col>
+                    </ion-row>
+                </ion-item>
+            </ion-list>
+        </div>
+    </div>
+</ion-content>

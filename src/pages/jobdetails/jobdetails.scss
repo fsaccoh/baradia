@@ -1,0 +1,184 @@
+page-jobdetails {
+    .header {
+        min-height: 110px;
+        max-height: 110px;
+        background: $light-gray;
+        .toolbar-background {
+            background: transparent;
+        }
+        ion-title {
+            span {
+                display: block;
+                ion-icon {
+                    font-size: 1.8rem;
+                    margin: 0 8px;
+                    &.material-icons {
+                        position: relative;
+                        top: 3px;
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+    .content {
+        &.bg-light {
+            background: darken($bg-light, 5%);
+        }
+    }
+    .list {
+        &.details {
+            margin-bottom: 0;
+            .item {
+                padding: 0;
+                .item-inner {
+                    padding: 0;
+                }
+                .label {
+                    white-space: normal;
+                    margin: 0;
+                    h2 {
+                        margin: 0;
+                        font-size: 1.8rem;
+                        font-weight: 500;
+                        padding: 15px 15px;
+                        padding-bottom: 10px;
+                    }
+                    p {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 5px;
+                        padding: 0 20px;
+                        font-weight: 400;
+                        img {
+                            width: 19px;
+                            margin-right: 10px;
+                        }
+                        span {
+                            font-size: 1.1rem;
+                            padding-right: 5px;
+                            color: $gray;
+                            font-weight: 400;
+                            line-height: 1;
+                            &.experience {
+                                border-left: 2px solid $gray;
+                                padding-left: 6px;
+                            }
+                            &.end {
+                                margin-left: auto;
+                                padding: 0;
+                                color: $text-theme-color;
+                                font-size: 1.3rem;
+                                font-weight: normal;
+                            }
+                        }
+                    }
+                }
+                .row {
+                    &.bottom {
+                        margin-top: 15px;
+                        padding: 15px 20px;
+                        align-items: flex-start;
+                        background: darken($bg-light, 2%);
+                        .d-flex {
+                            display: flex;
+                            align-items: center;
+                            .img-box {
+                                min-width: 35px;
+                                min-height: 35px;
+                                max-width: 35px;
+                                background: $dark;
+                                display: block;
+                                border-radius: 8px;
+                                margin-right: 10px;
+                                overflow: hidden;
+                            }
+                            h5 {
+                                font-size: 1.3rem;
+                                color: $text-theme-color;
+                                margin: 0;
+                                font-weight: 400;
+                                span {
+                                    display: block;
+                                    color: $gray;
+                                    font-size: 1rem;
+                                }
+                            }
+                        }
+                        .col {
+                            padding: 0;
+                            ion-icon {
+                                font-size: 1.6rem;
+                                color: $text-theme-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .about {
+        padding: 0 20px;
+        padding-bottom: 89px;
+        margin-top: 5px;
+        background: $white;
+        h2 {
+            margin: 0;
+            font-size: 1.6rem;
+            font-weight: 500;
+            padding-top: 30px;
+        }
+        p {
+            margin: 0;
+            font-size: 1.35rem;
+            line-height: 20px;
+            font-weight: 400;
+            padding-top: 18px;
+            letter-spacing: 0;
+        }
+        .responsibilites {
+            p {
+                position: relative;
+                padding-left: 33px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 4px;
+                    top: 25px;
+                    width: 9px;
+                    height: 9px;
+                    border-radius: 50%;
+                    background: $theme-color;
+                    display: block;
+                }
+            }
+        }
+    }
+    .fixed-bottom {
+        box-shadow: 0 -4px 58px 5px lighten($gray, 35%);
+        .row {
+            .col {
+                padding: 0;
+                .button {
+                    &.btn {
+                        text-transform: none;
+                        margin: 0;
+                        &.message {
+                            background: $white;
+                            color: $text-theme-color;
+                            &:hover:not(.disable-hover) {
+                                background: $white;
+                            }
+                            ion-icon {
+                                color: $text-light;
+                                padding-left: 0.3em;
+                                position: relative;
+                                top: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

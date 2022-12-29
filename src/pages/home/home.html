@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title text-center>{{"app_title" | translate}}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-light">
+    <div class="form">
+        <h2>{{"hey" | translate}} Sam, <br>{{"home_title" | translate}}<br>{{"home_title1" | translate}}</h2>
+        <ion-list no-lines>
+            <ion-item>
+                <ion-input type="text" placeholder="{{'home_search_box' | translate}}"></ion-input>
+            </ion-item>
+            <ion-list>
+                <ion-item>
+                    <ion-select placeholder="{{'years_of_experience' | translate}}" [(ngModel)]="experience">
+                        <ion-option value="one">1 years</ion-option>
+                        <ion-option value="two">2 years</ion-option>
+                    </ion-select>
+                </ion-item>
+                <ion-item>
+                    <ion-input type="text" placeholder="{{'location' | translate}}"></ion-input>
+                </ion-item>
+            </ion-list>
+            <button ion-button block class="btn" (click)="locationsearch()">{{"search_job" | translate}}</button>
+        </ion-list>
+    </div>
+    <ion-row class="update_resume" (click)="updateresume()">
+        <ion-col col-3>
+            <div class="img-box" text-center>
+                <img src="assets/imgs/ic_upload%20resume.png">
+            </div>
+        </ion-col>
+        <ion-col col-9>
+            <h2>{{"update_resume" | translate}}</h2>
+            <p>{{"update_resume_text" | translate}}</p>
+        </ion-col>
+    </ion-row>
+</ion-content>

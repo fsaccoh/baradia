@@ -1,0 +1,105 @@
+page-account {
+    .header {
+        background: $white;
+        .toolbar-title {
+            padding: 0 25px;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-top: 16px;
+            padding-bottom: 36px;
+            .profile-img {
+                min-width: 78px;
+                min-height: 78px;
+                border-radius: 10px;
+                background: #6d7082;
+                position: relative;
+                max-width: 78px;
+                margin: 0 26px;
+                overflow: hidden;
+                img {
+                    position: absolute;
+                    top: 0px;
+                    left: -10px;
+                    width: 100px;
+                    height: 100px;
+                    max-width: unset;
+                }
+            }
+            h2 {
+                font-size: 1.95rem;
+                font-weight: 500;
+                span {
+                    display: block;
+                    font-size: 1.55rem;
+                    padding-top: 5px;
+                    color: $gray;
+                }
+            }
+        }
+    }
+    .menu {
+        background: $white;
+        padding: 23px 28px;
+        padding-top: 30px;
+        margin-top: 7px;
+        h3 {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            font-size: 1.6rem;
+            font-weight: 500;
+            padding: 17px 0;
+            span {
+                display: block;
+                margin-left: auto;
+                background: $text-theme-color;
+                color: $white;
+                min-width: 17px;
+                min-height: 17px;
+                line-height: 17px;
+                border-radius: 50%;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .developed_by {
+        padding: 14px 20px 14px 20px;
+        background: #f9f9f9;
+        h2 {
+            margin: 0;
+            color: #848484;
+            font-size: 1.4rem;
+            font-weight: 500;
+            min-width: 41%;
+            letter-spacing: 0;
+            font-weight: 500;
+        }
+        .img_box {
+            width: 100%;
+            img {
+                max-width: 140px;
+                &.dark-theme-logo {
+                    display: none;
+                }
+            }
+        }
+    }
+    .buy-this-app-class {
+        position: fixed;
+        right: 0px;
+        top: 160px;
+        z-index: 99;
+        background: transparent;
+        width: 100%;
+        text-align: end;
+    }
+    .button-size {
+        height: 40px;
+        // width: 40%;
+        margin-right: 25px;
+        margin-left: 25px;
+        background-color: #f8563a;
+    }
+}

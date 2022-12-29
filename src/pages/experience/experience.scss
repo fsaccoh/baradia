@@ -1,0 +1,83 @@
+page-experience {
+    .header {
+        background: $white;
+        .row {
+            .col {
+                padding-bottom: 0;
+                h2 {
+                    position: relative;
+                    margin: 0;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    color: $gray;
+                    padding-top: 10px;
+                    padding-bottom: 12px;
+                }
+                &.active {
+                    h2 {
+                        color: $text-theme-color;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            width: 76px;
+                            height: 2px;
+                            display: block;
+                            margin: auto;
+                            background: $theme-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .form {
+        background: $white;
+        margin-top: 7px;
+        padding: 0 23px 37px 23px;
+        .list {
+            margin: 0;
+            .item {
+                margin-top: 0;
+                padding-top: 19px;
+                border-bottom: 1px solid lighten($gray, 20%) !important;
+                .label {
+                    font-size: 1.5rem;
+                }
+            }
+            .row {
+                .col {
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .option {
+        background: $white;
+        margin-top: 7px;
+        padding: 25px 23px 7px 23px;
+        h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            color: $text-theme-color;
+            padding-bottom: 26px;
+            span {
+                margin-left: auto;
+            }
+        }
+    }
+    .fixed-bottom {
+        .button {
+            &.btn {
+                margin-bottom: 0;
+                text-transform: none;
+                font-size: 2rem;
+                height: 58px;
+            }
+        }
+    }
+}

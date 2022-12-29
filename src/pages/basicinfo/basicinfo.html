@@ -1,0 +1,47 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>{{'updateresume' | translate}}</ion-title>
+    </ion-navbar>
+
+    <ion-row text-center>
+        <ion-col col-4 class="active">
+            <h2>{{'basic_info' | translate}}</h2>
+        </ion-col>
+        <ion-col col-4 class="">
+            <h2>{{'experience' | translate}}</h2>
+        </ion-col>
+        <ion-col col-4 class="">
+            <h2>{{'skills' | translate}}</h2>
+        </ion-col>
+    </ion-row>
+</ion-header>
+
+<ion-content class="bg-light">
+    <div class="form">
+        <ion-list no-lines margin-top>
+            <ion-item>
+                <ion-label floating>{{'full_name' | translate}}</ion-label>
+                <ion-input type="text" value="Sam Smith"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>{{'phone' | translate}}</ion-label>
+                <ion-input type="text" value="+1 987 654 3210"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>{{'email' | translate}}</ion-label>
+                <ion-input type="text" value="samsmith@mail.com"></ion-input>
+            </ion-item>
+        </ion-list>
+    </div>
+    <div class="description form">
+        <ion-list no-lines>
+            <ion-item>
+                <ion-label floating>{{'description' | translate}}</ion-label>
+                <ion-textarea type="text" value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. "></ion-textarea>
+            </ion-item>
+        </ion-list>
+    </div>
+    <div class="fixed-bottom">
+        <button ion-button block class="btn" (click)="experience()">{{'next' | translate}}</button>
+    </div>
+</ion-content>

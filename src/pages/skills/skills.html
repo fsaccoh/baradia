@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{"update_resume1" | translate}}</ion-title>
+  </ion-navbar>
+
+  <ion-row text-center>
+    <ion-col col-4 class="active">
+      <h2>{{"basic_info" | translate}}</h2>
+    </ion-col>
+    <ion-col col-4 class="active">
+      <h2>{{"experience" | translate}} </h2>
+    </ion-col>
+    <ion-col col-4 class="active">
+      <h2>{{"skills" | translate}}</h2>
+    </ion-col>
+  </ion-row>
+</ion-header>
+
+<ion-content class="bg-light">
+  <div class="form">
+    <ion-list no-lines>
+      <ion-item>
+        <ion-label floating>{{"add_skills" | translate}}</ion-label>
+        <ion-input type="text" value="Communication"></ion-input>
+      </ion-item>
+    </ion-list>
+  </div>
+  <div class="form skills_added">
+    <h2 text-uppercase>{{"skills_added" | translate}}</h2>
+    <p>Photoshop <span>x</span></p>
+    <p>lllustrator <span>x</span></p>
+    <p>Materlial <span>x</span></p>
+    <p>After Effect <span>x</span></p>
+    <p>Premier Pro <span>x</span></p>
+    <p>Frames <span>x</span></p>
+    <p>Corel Draw <span>x</span></p>
+  </div>
+  <div class="form skills_added recommended_skills">
+    <h2>{{"skills_recommend" | translate}}</h2>
+    <ion-scroll scrollX="true" style="height: 49px;white-space: nowrap;">
+      <p>Principals <span>+</span></p>
+      <p>Decision Taker <span>+</span></p>
+      <p>Optimistic <span>+</span></p>
+      <p>After Effect <span>+</span></p>
+      <p>Premier Pro <span>+</span></p>
+      <p>Frames <span>+</span></p>
+      <p>Corel Draw <span>+</span></p>
+    </ion-scroll>
+  </div>
+  <div class="fixed-bottom">
+    <button ion-button block class="btn" (click)="tabs()">{{"create_resume" | translate}}</button>
+  </div>
+</ion-content>

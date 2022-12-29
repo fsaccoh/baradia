@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title text-uppercase>{{"sign_up" | translate}}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div class="form">
+        <h2>{{"welcome2" | translate}} <br>{{"welcome1" | translate}}</h2>
+        <ion-list no-lines margin-top>
+            <ion-item>
+                <ion-label floating>{{"full_name" | translate}}</ion-label>
+                <ion-input type="text" value="Sam Smith"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>{{"phone" | translate}}</ion-label>
+                <ion-input type="text" value="+1 987643210"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>{{"email" | translate}}</ion-label>
+                <ion-input type="text" value="samsmith@mail.com"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>{{"login_box2" | translate}}</ion-label>
+                <ion-input type="password" class="password" value="******"></ion-input>
+            </ion-item>
+        </ion-list>
+        <button ion-button block class="btn" (click)="tabs()">{{"sign_up" | translate}}</button>
+    </div>
+</ion-content>
